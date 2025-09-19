@@ -44,7 +44,7 @@
   <h1>发 iMessage 给</h1>
   <p><strong>vavami0303@hotmail.com</strong></p>
 
-  <a id="imsgBtn" class="btn" href="imessage://vavami0303@hotmail.com&body=hi!我想加群！">立即打开 iMessage</a>
+  <a id="imsgBtn" class="btn" href="imessage://vavami0303@hotmail.com&body=hi!">立即打开 iMessage</a>
 
   <div id="wechatTip" class="note" style="display:none;">
     ⚠️ 你当前在微信中，微信会阻止自动跳转。<br>
@@ -61,7 +61,7 @@
 (function(){
   const ua = navigator.userAgent.toLowerCase();
   const isWeChat = ua.indexOf('micromessenger') !== -1;
-  const imsgLink = "imessage://vavami0303@hotmail.com&body=hi!我想加群！";
+  const imsgLink = "imessage://vavami0303@hotmail.com&body=hi!";
 
   if(isWeChat){
     // 在微信内 → 只提示，不自动跳转
